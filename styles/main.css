@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: url(../bacasakgrond.jpg);
+  padding: 0px;
+  padding-top: 5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(245, 245, 245, 0.97);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100000;
+}
+
+section img {
+  width: 8rem;
+  height: 8rem;
+}
+
+section form {
+  color: #4a4e74;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section form label {
+  display: block;
+  margin-bottom: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+section form input {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: block;
+  height: 2.5rem;
+  width: 20rem;
+  border: 0;
+  border: 1px solid #ccc;
+  outline: none;
+  text-indent: 1rem;
+  color: #0b2434;
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  -webkit-transition: cubic-bezier(0.23, 1, 0.32, 1);
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 5px;
+}
+
+section form input:focus {
+  border-bottom: 1px so;
+}
+
+section form .diff {
+  min-width: 20rem;
+  text-align: center;
+  color: #4a4e74;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+section form .diff span {
+  font-size: 0.8rem;
+  padding-left: 2px;
+  font-style: italic;
+  color: gray;
+}
+
+section form .mode--container {
+  min-width: 20rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section form .mode--container button {
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: #fff;
+  color: #2b283a;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+section form .mode--container button:focus {
+  background-color: #f5f5f5;
+  color: #0b2434;
+}
+
+section form .mode--container button:nth-child(2) {
+  margin-inline: 5px;
+}
+
+section button.btn {
+  height: 3rem;
+  min-width: 20rem;
+  border: 0px;
+  background-color: blue;
+  color: #f5f5f5;
+  font-family: "Karla", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.top--container {
+  width: 100%;
+  color: #f5f5f5;
+  top: 0;
+  font-weight: 700;
+  line-height: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 1rem;
+  position: absolute;
+  color: black;
+}
+
+.top--container p {
+  font-size: 0.8rem;
+  width: 50%;
+  height: inherit;
+}
+
+.top--container p span {
+  padding-left: 0.5rem;
+  display: block;
+}
+
+.top--container p.score {
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.top--container p.score span {
+  display: block;
+  color: #0b2434;
+}
+
+.top--container p.score span:nth-child(1) {
+  border-bottom: 1px solid gray;
+}
+
+.top--container p.score span:nth-child(2) {
+  color: #df4759;
+  padding-top: 0.4rem;
+}
+
+.top--container p.score span:nth-child(3) {
+  color: #42ba96;
+}
+
+.top--container p.score span:nth-child(4) {
+  color: RGB(190, 179, 148);
+}
+
+main.tenzies--container {
+  max-width: 90%;
+  min-height: 24em;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+  margin-inline: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.tenzies--container h2.header {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  color: #2b283a;
+}
+
+main.tenzies--container p.rule {
+  margin-top: -3rem;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #4a4e74;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+main.tenzies--container button.btn {
+  font-family: inherit;
+  width: 6.8rem;
+  height: 2.54rem;
+  border: 0;
+  border-radius: 3px;
+  background: #5035ff;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.1rem;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+main.tenzies--container button.btn:active {
+  -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dice--container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 1.16rem 0.01rem;
+  place-items: center;
+  margin-top: -1rem;
+}
+
+.dice--container .die {
+  width: 2.44rem;
+  height: 2.44rem;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #0b2434;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 8rem;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main.tenzies--container {
+    max-width: 25rem;
+    min-height: 28em;
+    margin-top: 8rem;
+  }
+  p.rule {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .top--container p {
+    font-size: 1rem;
+  }
+  .top--container p span {
+    padding-left: 0.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
