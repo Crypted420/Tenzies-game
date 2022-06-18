@@ -13,6 +13,7 @@ body, html {
 body {
   font-family: "Karla", sans-serif;
   background: url(../background.jpg);
+  background-size: cover;
   padding: 0px;
   padding-top: 5rem;
   -webkit-user-select: none;

@@ -116,6 +116,7 @@ export default function App() {
     if (userData.mode === "easy") {
       if (bestEasy !== "none") {
         if (rolls < bestEasy.rolls) {
+          setBestEasy(Data);
           return localStorage.setItem("bestEasy", JSON.stringify(Data));
         } else {
           return setBestEasy((prev) => prev);
@@ -126,6 +127,7 @@ export default function App() {
     } else if (userData.mode === "medium") {
       if (bestMedium !== "none") {
         if (rolls < bestMedium.rolls) {
+          setBestMedium(Data);
           return localStorage.setItem("bestMedium", JSON.stringify(Data));
         } else {
           return setBestMedium((prev) => prev);
@@ -136,6 +138,7 @@ export default function App() {
     } else {
       if (bestHard !== "none") {
         if (rolls < bestHard.rolls) {
+          setBestHard(Data);
           return localStorage.setItem("bestHard", JSON.stringify(Data));
         } else {
           return setBestHard((prev) => prev);
